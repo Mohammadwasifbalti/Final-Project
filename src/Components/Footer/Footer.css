@@ -1,0 +1,27 @@
+.Footer{
+    background: rgb(122, 157, 171);
+    padding: 3vw 0vw 2vw 0vw;
+    box-sizing: border-box;
+}
+.Footer div{
+    height: 27px;
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: middle;
+    margin-left: 30vw;
+    box-sizing: border-box;
+}
+.Footer img{
+    float: left;
+}
+.Footer h5{
+    display: block;
+    float: left;
+    margin: 0;
+    margin-left: 2vw;
+    margin-top: 0.3%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 1.1em;
+    font-weight: normal;
+}

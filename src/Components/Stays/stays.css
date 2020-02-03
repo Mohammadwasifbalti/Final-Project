@@ -1,0 +1,51 @@
+.Stays{
+    min-height: 69.8vh;
+    padding: 5vw;
+    background-color: rgba(95, 189, 247, 0.247);
+}
+.Staysloader{
+    width: 90vw;
+    vertical-align: middle;
+    font-size: 80px;
+    text-align: center;
+    padding-top: 13%;
+    color: #6dafc9;
+    z-index: 3;
+    box-sizing: border-box;
+    height: 100%;
+    box-sizing: border-box;
+}
+.StaysCard{
+    border: 2px gray solid;
+    height: 24vw;
+    border-radius: 20px;
+    width: 70%;
+    padding: 0.9vw;
+    padding-top: 0.75vw;
+    box-sizing: border-box;
+    margin-bottom: 5vw;
+    background-color: rgba(255, 255, 255, 0.521);
+}
+.StaysCard img{
+    margin: 0;
+    height: 22vw;
+    width: 20vw ;
+    border-radius: 18px 0 0 18px;
+    padding-right: 2vw;
+    border-right: 3px dashed rgba(146, 145, 145, 0.644);
+}
+.StaysCard table{
+    width: 100%;
+}
+.StaysCard td{
+    padding: 0;
+}
+.stayimage{
+    width: 40%;
+}
+.StaysCard td h2{
+    text-align: center;
+    display: block;
+    margin: 0;
+    text-transform: capitalize;
+}

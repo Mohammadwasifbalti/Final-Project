@@ -1,0 +1,92 @@
+.StayDetail{
+    padding-top: 5vw;
+    min-height: 69.8vh;
+    overflow: hidden;
+    box-sizing: border-box;
+    background: rgba(95, 189, 247, 0.247);
+    padding-bottom: 5vw;
+}
+.loaderlist{
+    width: 100vw;
+    vertical-align: middle;
+    font-size: 80px;
+    text-align: center;
+    padding-top: 9vw;
+    color: #6dafc9;
+    z-index: 3;
+    box-sizing: border-box;
+    height: 100%;
+    box-sizing: border-box;
+}
+.SpecificCard{
+    box-sizing: border-box;
+    border: 2px solid gray;
+    border-radius: 55px;
+    width: 80%;
+    padding: 5vw 12vw; 
+    margin: auto;
+    overflow: hidden;
+}
+.listingimages{
+    margin: auto;
+}
+#slider{
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    height: 35vw;
+}
+.arrows{
+    height: 12%;
+    position: absolute;
+    z-index: 2;
+    margin-top: 14vw; 
+    opacity: 0.4;
+}
+#left{
+    margin-left: -4vw;
+}
+#right{
+    margin-left: 1vw;
+}
+#listdetails{
+    text-align: center;
+    text-transform: capitalize;
+}
+.contactbuttons{
+    width: 40%;
+    margin: 2vw 5%;
+    padding: 1vw;
+    border-radius: 20px 0 20px 0;
+    font-size: 1.3em;
+    font-weight: 600;
+    background: #ff5a5f;
+    border-color: #ff5a5f;
+    color: white;
+}
+#userdetails{
+    vertical-align: middle;
+    font-size: 1.4em;
+    padding-bottom: 1.3vw;
+    border-bottom: 3px dashed black;
+    margin-bottom: 1vw;
+}
+#userdetails span{
+    float: left;
+    margin-top: 10px;
+    margin-right: 2vw;
+    display: block;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+#smallpic{
+    float: left;
+    margin-top: 0.2vw;
+    border-radius: 50%;
+    margin-right: 3vw;
+}
+#username{
+    margin-left: -1.8vw;
+    margin-top: 15px !important;
+    font-size: 0.8em;
+}

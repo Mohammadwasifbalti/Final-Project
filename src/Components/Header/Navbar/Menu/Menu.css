@@ -1,0 +1,165 @@
+.Menu{
+    margin-top: 1vw;
+    margin-right: 2vw;
+    height: 5.3vw;
+}
+.Menu ul{
+    list-style: none;
+    margin-right: 0.9vw;
+}
+
+.Menu ul li{
+    float: left;
+    color: white !important;
+    font-size: 0.9em;
+    font-weight: 600;
+    padding: 0vw 0.6vw 2.3vw 0.6vw;
+    margin-left: 1vw;
+    border-bottom: 2px solid transparent;
+}
+.Menu ul li:hover{
+    border-bottom: 2px solid white;
+    cursor: pointer;
+}
+#img img{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    margin: auto;
+    position: relative;
+    z-index: 0;
+}
+#img{
+    position: relative;
+    z-index: 2;
+    margin-top: -1.4vw;
+}
+#img:hover{
+    border-bottom: 2px solid transparent;
+}
+#img span{
+    display: inline-block;
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 1px;
+    border: 2px solid orange;
+}
+#accountDetails{
+    background: rgba(207, 206, 206, 0.945);
+    position: absolute;
+    z-index: 2;
+    padding: 2vw;
+    right: 3vw;
+    top: 6.5vw;
+    border-radius: 30px;
+}
+#accountDetails td{
+    padding: 1vw 3vw;
+}
+#accountDetails ul li{
+    float: none;
+    margin: 0px;
+}
+#accountDetails ul{
+    list-style: none;
+}
+#logout{
+    cursor: pointer;
+    display:  inline-block;
+    text-align: right;
+    width: 100%;
+    font-weight: 700;
+}
+#logout:hover{
+    font-weight: 900;
+}
+
+#listingsDropDown{
+    position: absolute;
+    z-index: 2;
+    background: rgba(207, 206, 206, 0.945);
+    box-sizing: border-box;
+    top: 6vw;
+    right: 15vw;
+    padding-right: 0.5vw;
+    padding-left: 0.5vw;
+    border: 1px dotted gray;
+    min-width: 20vw;
+}
+.nolistings{
+    display: block;
+    padding: 1vw;
+    font-weight: 600;
+    font-size: 14px;
+    font-style: italic;
+    padding-bottom: 2vw;
+    border-bottom: 1.5px solid gray;
+}
+#viewAllListings {
+    color: black !important;
+    display: block !important;
+    text-align: center !important;
+    border: 0 !important;
+    padding: 1vw !important;
+}
+a{
+    text-decoration: none;
+}
+.content{
+    max-height: 24.3vw;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.content::-webkit-scrollbar {
+    width: 0.8em;
+    background-color: rgba(207, 206, 206, 0.103);
+}
+.content::-webkit-scrollbar-corner{
+    display:  none;
+}
+.content::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.116);
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.116);
+}
+.content::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+#listingsDropDown h5{
+    text-align: center;
+    font-size: 1em;
+    text-transform: uppercase;
+    border-bottom: 2px dotted gray;
+    padding: 1vw 0;
+    margin: 0;
+}
+#listingsDropDown ul, li{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#listingsDropDown li{
+    padding: 0;
+    padding-bottom: 0.5vw;
+    margin: 0;
+    float: none;
+    padding-top: 0.3vw;
+}
+.items{
+    border-bottom: 1.5px solid gray !important;
+    text-transform: capitalize;
+}
+#listingsDropDown img{
+    padding-right: 0.7vw;
+    border-right: 2px solid rgb(68, 68, 68);
+}
+#listingsDropDown th{
+    display: inline-block;
+    font-size: 14px;
+    color: rgb(66, 65, 65);
+    text-align: left;
+    font-weight: 600;
+}
+

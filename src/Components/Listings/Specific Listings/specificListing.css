@@ -1,0 +1,87 @@
+.SpecificListing{
+    padding-top: 5vw;
+    min-height: 69.8vh;
+    overflow: hidden;
+    box-sizing: border-box;
+    background: rgba(95, 189, 247, 0.247);
+    padding-bottom: 5vw;
+}
+.loader
+{
+    left: 0;
+}
+#updatedSuccess{
+    background: rgba(8, 238, 8, 0.438);
+    text-align: center;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.664);
+    font-weight: 700;
+    box-sizing: border-box;
+    font-style: italic;
+    padding: 1vw;
+    width: 100%;
+    top: 8.5vw;
+    position: absolute;
+    z-index: 1;
+
+}
+.loaderlist{
+    width: 100vw;
+    vertical-align: middle;
+    font-size: 80px;
+    text-align: center;
+    padding-top: 9vw;
+    left: 0;
+    color: #6dafc9;
+    z-index: 3;
+    box-sizing: border-box;
+    height: 100%;
+    box-sizing: border-box;
+}
+.SpecificCard{
+    box-sizing: border-box;
+    border: 2px solid gray;
+    border-radius: 55px;
+    width: 80%;
+    padding: 5vw 12vw; 
+    margin: auto;
+    overflow: hidden;
+}
+.listingimages{
+    margin: auto;
+}
+#slider{
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    height: 35vw;
+}
+.arrows{
+    height: 12%;
+    position: absolute;
+    z-index: 2;
+    margin-top: 17vw;
+    opacity: 0.4;
+}
+#left{
+    margin-left: -4vw;
+}
+#right{
+    margin-left: 1vw;
+}
+#listdetails{
+    text-align: center;
+    text-transform: capitalize;
+}
+.buttons{
+    width: 40%;
+    margin: 1vw 5%;
+    padding: 1vw;
+    border-radius: 20px 0 20px 0;
+    font-size: 1.3em;
+    font-weight: 600;
+    background: rgba(95, 189, 247, 0.568);
+    border-color: rgba(95, 189, 247, 0.685);
+    border-top: 3px solid rgba(95, 189, 247, 0.685);
+}

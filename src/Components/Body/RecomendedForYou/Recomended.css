@@ -1,0 +1,26 @@
+.Recomended{
+    padding: 1.5vw 5vw 4vw 5vw;
+    box-sizing: border-box;
+    height: 27vw;
+    overflow: hidden;
+}
+.Recomended div{
+    vertical-align: middle;
+}
+.Recomended div button{
+    position: absolute;
+    z-index: 3;
+    margin-top: 9%;
+    border-radius: 15px;
+    margin-left: -1.5%;
+    border: none;
+    padding: 7px 7px 7px 7px;
+    cursor: pointer;
+}
+.Recomended div button img{
+    height: 20px;
+}
+.Recomended h2{
+    color: rgb(72, 72, 72)
+
+}

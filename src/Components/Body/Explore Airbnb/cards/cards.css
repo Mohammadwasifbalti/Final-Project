@@ -1,0 +1,19 @@
+.Cards{
+    border-radius: 15px;
+    display: inline-block;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    color: rgb(72, 72, 72);
+    cursor: pointer;
+    padding-bottom: 1vw;
+    margin-right: 1vw;
+    box-sizing: border-box;
+}
+.pic{
+    width: 21vw;
+}
+.picdes{
+    margin-top: 0;
+    padding-top: 1vw;
+    padding-left: 2vw;
+}

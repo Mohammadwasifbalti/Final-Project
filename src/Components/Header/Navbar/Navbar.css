@@ -1,0 +1,24 @@
+.Navbar{
+    padding: 1vw 0 0.5vw 0;
+    vertical-align: middle;
+    background-image: url(https://a0.muscache.com/4ea/air/r:w1550-h1037-sfit,e:fjpg-c80/pictures/0ffd8594-f123-43f0-85bb-7ef88c6f0624.jpg);
+    background-position-y: -15vh;
+    background-size: cover;
+}
+#logo{
+    background-image: url('./logo.png');
+    background-size: cover;
+    background-position-y: 0.3vh;
+    margin-top: 1vw;
+    margin-left: 1.2vw;
+    height: 35px;
+    width: 50px;
+    float: left;
+    cursor: pointer;
+}
+.Menu{
+    float: right;
+}
+.clearBoth{
+    clear: both;
+}

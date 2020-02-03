@@ -1,0 +1,161 @@
+.SearchForm{
+    width: 33vw;
+    border-radius: 3px;
+    background: white;
+    margin-left: 6vw;
+    margin-top: 1.4vw;
+    padding: 1.3vw 2.5vw 2vw 2.5vw;
+    box-sizing: border-box;
+    overflow: hidden;
+    box-shadow: 2px 2px 10px -8px gray, -2px -2px 10px -8px gray,-2px 2px 10px -8px gray, -2px -2px 10px -8px gray;
+}
+@media only screen and (max-width: 800px){
+.SearchForm{
+    width: 90%;
+}
+}
+.SearchForm h1{
+    color: rgb(75, 74, 74);
+    text-align: justify;
+    font-size: 1.8em;
+    width: 85%;
+}
+input,button{
+    outline: none;
+}
+.SearchForm form{
+    text-align: left;
+}
+.SearchForm table{
+    table-layout: fixed;
+    width: 100%;
+    max-width: 100%;
+}
+.SearchForm label{
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight: 600;
+    color: rgb(54, 53, 53);
+}
+.SearchForm input,#guests{
+    padding: 1vw;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid rgba(128, 128, 128, 0.466);
+    font-size: 1.1em;
+    overflow: hidden;
+}
+#guests{
+    background-size: 20px;;
+    background-repeat: no-repeat;
+    background-position-x: 98%;
+    background-position-y: 55%;
+    cursor: pointer;
+    background-color: white;
+}
+.SearchForm td{
+    padding-top: 0.5vw;
+}
+.SearchForm #submit{
+    float: right;
+    margin-top: 2vw;
+}
+.SearchForm #submit{
+    background: #ff5a5f;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 1vw 2vw;
+    border-radius: 3px;
+    border: none;
+}
+
+.datePicker::-webkit-inner-spin-button,
+.datePicker::-webkit-calendar-picker-indicator {
+    opacity: 0;
+    width: 10%;
+    height: 5%;
+    position: absolute;
+    -webkit-appearance: none;
+}
+#tddd{
+    padding-top: 0;
+    margin-top: -100px;
+}
+#guestsDropdown{
+    padding: 2vw;
+    padding-bottom: 0.4vw;
+    width: 23.5%;
+    margin-left: 5px;
+    margin-top: -3px;
+    position: absolute;
+    background: white;
+    box-shadow: 2px 2px 10px -8px gray, -2px -2px 10px -8px gray,-2px 2px 10px -8px gray, -2px -2px 10px -8px gray;
+}
+.left{
+    float: left;
+    vertical-align: middle;
+}
+.right{
+    float: right;
+}
+.right .controls{
+    display: inline-block;
+    border: 1px solid #008489;
+    border-radius: 50%;
+    padding: 5px 12px;
+    color: #008489;
+    cursor: pointer;
+    margin-top: -10px;
+    font-size: 1.2em;
+    background: white;
+}
+.right span{
+    padding: 20px;
+    display: inline-block;
+    font-weight: 600;
+    width: 5vw;
+    box-sizing: border-box;
+}
+.headings{
+    font-weight: 600;
+    font-size: 1.1em;
+    display: inline-block;
+    margin-top: 1vw;
+    color: rgb(68, 68, 68);
+}
+.descrip{
+    font-size: 0.8em;
+    color: rgb(68, 68, 68);
+}
+.clearBoth{
+    clear: both;
+}
+.options{
+    padding: 0.5vw 0vw;
+    vertical-align: middle;
+}
+#save{
+    color: #008489;
+    font-size: 0.9em;
+    cursor: pointer;
+    display: inline-block;
+}
+#save:hover{
+    text-decoration: underline;
+}
+#clear{
+    font-size: 0.9em;
+    display: inline-block;
+    cursor: pointer;
+}
+#clear:hover{
+    text-decoration: underline;
+}
+.right1{
+    float: right;
+}
+.last{
+    margin-top: 0.8vw;
+}

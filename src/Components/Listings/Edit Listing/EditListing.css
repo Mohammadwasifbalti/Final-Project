@@ -1,0 +1,138 @@
+.EditListing{
+    padding-bottom: 6vw;
+    min-height: 57.7vh;
+}
+#success{
+    background: rgba(8, 238, 8, 0.438);
+    text-align: center;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.664);
+    font-weight: 700;
+    box-sizing: border-box;
+    font-style: italic;
+    padding: 1vw;
+    width: 100%;
+    top: 9vw;
+    position: absolute;
+    z-index: 1;
+    transition: 2s ease-in;
+}
+#form{
+    margin-top: 6.5vw;
+}
+.loader{
+    position: fixed;
+    width: 100vw;
+    vertical-align: middle;
+    font-size: 80px;
+    text-align: center;
+    padding-top: 45vh;
+    color: #6dafc9;
+    top: 0;
+    background: #2e2e2e62;
+    z-index: 3;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.EditData{
+    width: 38vw;
+    border-radius: 3px;
+    background: rgb(248, 247, 247);
+    margin: auto;
+    padding: 1.3vw 2.5vw 2vw 2.5vw;
+    box-sizing: border-box;
+    overflow: hidden;
+    box-shadow: 2px 2px 10px -8px gray, -2px -2px 10px -8px gray,-2px 2px 10px -8px gray, -2px -2px 10px -8px gray;
+}
+@media only screen and (max-width: 800px){
+.EditData{
+    width: 90%;
+}
+}
+.EditData h1{
+    color: rgb(75, 74, 74);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.8em;
+}
+input,button{
+    outline: none;
+}
+.EditData form{
+    text-align: left;
+}
+.EditData table{
+    table-layout: fixed;
+    width: 100%;
+    max-width: 100%;
+}
+.EditData label{
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight: 600;
+    color: rgb(54, 53, 53);
+}
+.EditData input{
+    padding: 1vw;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid rgba(128, 128, 128, 0.466);
+    background: rgb(250, 250, 250);
+    font-size: 1.1em;
+    overflow: hidden;
+}
+.EditData td{
+    padding-top: 0.5vw;
+}
+.EditData #update, .EditData #cancel {
+    margin: auto;
+    margin: 0 2vw;
+    margin-top: 2vw;
+    background: #ff5a5f;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 1vw 2vw;
+    border-radius: 3px;
+    border: none;
+}
+.center{
+    text-align: center;
+}
+#location{
+    margin-bottom: 0.7vw;
+}
+.controling .controls{
+    display: inline-block;
+    border: 1px solid #008489;
+    border-radius: 50%;
+    padding: 5px 12px;
+    color: #008489;
+    cursor: pointer;
+    margin-top: -10px;
+    font-size: 1.2em;
+    background: rgb(250, 250, 250);
+}
+.controling span{
+    padding: 15px;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    display: inline-block;
+    font-weight: 600;
+    width: 5vw;
+    text-align: center;
+    box-sizing: border-box;
+}
+#error{
+    color: rgb(255, 0, 0);
+    padding-top: 0.5vw;
+    padding-left: 0.5vw;
+}
+.star{
+    color: red;
+    margin-top: 0.5vw;
+    font-weight: 500;
+}
