@@ -83,10 +83,10 @@ class App extends Component {
 
 // }
   UNSAFE_componentWillMount(){
-    if(this.props.signUpStatus !== 'process')
     this.props.status()
   }
   render() {
+    console.log(this.props.signUpStatus)
     return (
       <div className="App">
         <Router>  
@@ -108,14 +108,6 @@ class App extends Component {
     );
   }
 }
-const mapStateToProps = (state) =>
-{
-  return(
-    {
-      signUpStatus: state.authReducer.signUpStatus,
-    }
-  )
-}
 const mapDispatchToProps = (dispatch)=> {
   return{
     // authChange: (user)=>dispatch({type: 'authChanged', payload: user}),
@@ -123,7 +115,7 @@ const mapDispatchToProps = (dispatch)=> {
     // addListing: (data)=>dispatch({type: 'addListing', payload: data}),
     // updateMenu: (data)=>dispatch({type: 'updateMenu', payload: data}),
     // stays: (data)=>dispatch({type: 'stays', payload: data}),
-    status: ()=>dispatch(isStatus(dispatch))
+    status: (signUpStatus)=>dispatch(isStatus(signUpStatus))
   }
 }
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default connect(null, mapDispatchToProps)(App);

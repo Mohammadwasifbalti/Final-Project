@@ -15,8 +15,6 @@ class Signup extends Component
             pass: '',
             pic: false,
             loaded: false,
-            errorDisplay: 'block',
-            error: '',
             loader: 'none'
         }
     }
@@ -42,23 +40,21 @@ class Signup extends Component
             this.props.signUp(email, name, pass, pic)
         }
     else
-    this.setState({error: 'Please fill all the Fields', errorDisplay: 'block'})
+        this.props.SignUpStatus('Please fill all the Fields');
     }
-    displayingError()
+    UNSAFE_componentWillReceiveProps()
     {
-        this.setState({error: this.props.signUpStatus, errorDisplay: 'block', loader: 'none', loaded: false})
-        this.props.SignUpStatus();
+        if(this.state.loader !== 'none')
+        this.setState({loader: 'none'})
     }
+
     render(){
         console.log(this.props.signUpStatus)
-        if(this.props.signUpStatus && this.props.signUpStatus !== 'Success' && this.props.signUpStatus !== "process" && this.props.signUpStatus !== this.state.error)
-        {
-            this.displayingError()
-        }
         if(this.props.isLogedin ==='notloaded'){
             return <div></div>
         }
-        else if(this.props.isLogedin && this.props.signUpStatus !== 'process'){
+        if(this.props.isLogedin || (this.props.isLogedin && this.props.signUpStatus === 'Success')){
+            console.log(this.props.signUpStatus);
             return <Redirect to='/' />
         }
         else
@@ -114,7 +110,8 @@ class Signup extends Component
                                     </tr>
                                 </tbody>
                             </table>
-                            <div id="error" style={{display: this.state.errorDisplay}}>{this.state.error} </div>
+                            {(this.props.signUpStatus && this.props.signUpStatus !== 'Success' && this.props.signUpStatus !== "process" ? 
+                            <div id="error" >{this.props.signUpStatus} </div> : null)}
                             <div className="center"><button id='signup' onClick={(e)=>this.onSubmit(e)} >Sign Up</button></div>
                             <div className="center">Already have an account ? <Link to='/signin'>Sign in</Link></div>
 
@@ -135,6 +132,6 @@ const mapStateToProps = (state)=>(
 const mapDispatchToProps = (dispatch)=>({
     temporary: (user)=>dispatch({type : 'temporary', payload : user }),
     signUp: (email,name,pass,pic)=>dispatch(SignUp(email,name,pass,pic)),
-    SignUpStatus: ()=>dispatch({type: 'signUpStatus', payload: false})
+    SignUpStatus: (para)=>dispatch({type: 'signUpStatus', payload: para})
 })
 export default connect(mapStateToProps, mapDispatchToProps)(Signup);

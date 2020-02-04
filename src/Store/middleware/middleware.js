@@ -4,6 +4,7 @@ export const isStatus = ()=>{
     console.log('running')
         return dispatch => {
             firebase.auth().onAuthStateChanged(user=>{
+              
                 if(user)
                 {
                     dispatch({type: 'authChanged', payload: user})
@@ -11,12 +12,12 @@ export const isStatus = ()=>{
                     console.log(user.email);
                     let profilePic = db.collection('User').doc(user.email);
                     profilePic.get().then((data)=>{
-                        if(data){
+                        if(data.data()){
+
                           console.log(data.data());
-                            dispatch({type: 'dataFromFirestore', payload: data.data()})
+                          dispatch({type: 'dataFromFirestore', payload: data.data()})
                         }
-                        else
-                        dispatch({type: 'dataFromFirestore', payload: {name: '', email: '', pic: ''}})
+
                         let Listings = [];
                         profilePic.collection('Your Listings').get().then((querySnapshot)=>{
                           let len = querySnapshot.docs.length;
@@ -110,9 +111,8 @@ export const UpdateListings = (listings,index, id, address, city, province, gues
 export const SignUp = (email,name,pass,pic) => dispatch =>
 {
     dispatch({type: 'signUpStatus', payload: 'process'})
-    dispatch({type: 'dataFromFirestore', payload: {name: name, email: email, pic: 'https://firebasestorage.googleapis.com/v0/b/final-project-1ebcd.appspot.com/o/default%2Fblack.jpg?alt=media&token=121434bd-8c49-44aa-96d9-f5cd53ecc745'}});
     let promise = firebase.auth().createUserWithEmailAndPassword(email, pass);
-        promise.then(()=>{
+    promise.then(()=>{
             let date = Date.now();
             let uploadImage = firebase.storage().ref().child('profiles/' + date)
             uploadImage.put(pic)
@@ -120,6 +120,7 @@ export const SignUp = (email,name,pass,pic) => dispatch =>
             uploadImage.getDownloadURL().then((url)=>{
             let newUser = db.collection('User').doc(email);
             newUser.set({name: name, email: email, pic: url }).then(()=>{
+              dispatch({type: 'dataFromFirestore', payload: {name: name, email: email, pic: url}})
               dispatch({type: 'signUpStatus', payload: 'Success'})
             })
         })
